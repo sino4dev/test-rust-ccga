@@ -1,16 +1,16 @@
-name: upload sample
+# name: upload sample
 
-on: [push]
+# on: [push]
 
-jobs:
-  upload:
-    name: Upload #1
-    runs-on: ubunth-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: mkdir -p foo/bar/baz
-      - run: echo helllo > foo/bar/baz/world.txt
-      - uses: actions/upload-artifact@v3
-        with:
-          name: my-artifact
-          path: foo/bar/baz/world.txt
+# jobs:
+#   upload:
+#     name: Upload #1
+#     runs-on: ubunth-latest
+#     steps:
+#       - uses: actions/checkout@v4
+#       - run: mkdir -p foo/bar/baz
+#       - run: echo helllo > foo/bar/baz/world.txt
+#       - uses: actions/upload-artifact@v3
+#         with:
+#           name: my-artifact
+#           path: foo/bar/baz/world.txt
