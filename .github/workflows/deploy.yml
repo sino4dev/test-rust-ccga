@@ -43,7 +43,7 @@ jobs:
       - name: Build
         uses: actions-rs/cargo@v1
         with:
-          use-cross: true
+          use-cross: ${{ runner.os == 'Linux' }}
           command: build
           args: --verbose --release --target ${{ matrix.target }}
 
