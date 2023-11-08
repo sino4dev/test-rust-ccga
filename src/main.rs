@@ -1,6 +1,6 @@
 use std::env;
 
 fn main() {
-    println!("{}", "nothing to do");
+    println!("{}", "v3.0.0");
     println!("{}", env::consts::OS);
 }
